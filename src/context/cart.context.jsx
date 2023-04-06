@@ -1,13 +1,13 @@
 import { createContext,useEffect,useState } from "react";
 
 const addCartItem = (cartItems,productToAdd) =>{
-    // find if cartItems contains productToAdd
+    // cartıtems'in productToAdd içerip içermediğini bakıyoruz
 
     const existingCartItem = cartItems.find(
         (cartItem) => cartItem.id === productToAdd.id
     );
 
-    // If found, increment quantity
+    // Bulunursa, miktarı artırıyoruz
 
     if(existingCartItem) {
         return cartItems.map((cartItems) => cartItems.id === productToAdd.id ?
@@ -15,27 +15,27 @@ const addCartItem = (cartItems,productToAdd) =>{
         : cartItems )
     }
 
-    //return new array with modified cartItems/new cart item
+    //daha sonra güncel cartItems array şeklinde döndürüyoruz.
 
     return [...cartItems, {...productToAdd, quantity : 1}];
 
 };
 
 const removeCartItem = (cartItems,cartItemToRemove) =>{
-    // find the cart item to remove
+    // silinecek cartItem ' i buluyoruz
 
     const existingCartItem = cartItems.find(
         (cartItem) => cartItem.id === cartItemToRemove.id
     );
 
 
-    // check if quantity is equal to 1, if it is remove that item from the cart 
+    // miktar 1 e eşitse seçilen öğe silinecek
 
     if(existingCartItem.quantity === 1) {
         return cartItems.filter(cartItem => cartItem.id !== cartItemToRemove.id)
     }
 
-    // return back cartitems with matching cart item with reduced quantity
+    // silindikten sonra geri döndürme
 
     return cartItems.map((cartItems) =>
     cartItems.id === cartItemToRemove.id

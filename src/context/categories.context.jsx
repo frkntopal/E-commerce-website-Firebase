@@ -12,6 +12,7 @@ export const CategoriesProvider = ({children}) => {
 useEffect(() => {
     // çekeceğimiz veriyi asenkron yapmamız için fonksiyon tanımlıyoruz.
 
+
     const getCategoriesMap = async () =>{
         const categoryMap = await getCategoriesAndDocuments();
         console.log(categoryMap)
