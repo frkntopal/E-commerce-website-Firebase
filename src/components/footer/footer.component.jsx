@@ -10,10 +10,10 @@ const Footer = () => {
       <h4>Contact Us</h4>
       <p>Contact us for your questions, opinions and suggestions.</p>
     </div>
-    <div class="footer-top-right">
-      <a href="https://www.linkedin.com/in/furkan-topal-0002bb200/" target='_blank' rel="noreferrer"><i class="fab fa-linkedin"></i> </a>
-      <a href="https://twitter.com/_frkntopal" target='_blank' rel="noreferrer"><i class="fab fa-twitter"></i></a>
-      <a href="https://github.com/frkntopal" target='_blank' rel="noreferrer"><i class="fab fa-github"></i></a>
+    <div className="footer-top-right">
+      <a href="https://www.linkedin.com/in/furkan-topal-0002bb200/" target='_blank' rel="noreferrer"><i className="fab fa-linkedin"></i> </a>
+      <a href="https://twitter.com/_frkntopal" target='_blank' rel="noreferrer"><i className="fab fa-twitter"></i></a>
+      <a href="https://github.com/frkntopal" target='_blank' rel="noreferrer"><i className="fab fa-github"></i></a>
     </div>
   </div>
   <div className="footer-middle">
