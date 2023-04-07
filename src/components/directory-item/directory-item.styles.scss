@@ -1,6 +1,5 @@
 .directory-item-container {
-  /* styles for large screens */
-  flex: auto; /* 30% width */
+  flex: auto; 
   height: 240px;
   display: flex;
   align-items: center;
@@ -69,25 +68,24 @@
     }
   }
 
-  /* styles for small screens */
   @media screen and (max-width: 768px) {
 
-    flex-basis: 100%; /* full width */
-    height: auto; /* allow height to adjust based on content */
-    margin: 0 0 15px; /* remove horizontal margin */
-    border-radius: 0; /* remove border radius */
-    box-shadow: none; /* remove box shadow */
-    position: static; /* remove absolute positioning */
+    flex-basis: 100%; 
+    height: auto; 
+    margin: 0 0 15px;
+    border-radius: 0;
+    box-shadow: none;
+    position: static; 
 
     
     .body {
-      padding: 15px; /* add padding to body */
-      align-items: ce;
+      padding: 15px; 
+      align-items: center;
 
     }
 
     .background-image {
-      height: 200px; /* adjust height of background image */
+      height: 200px;
     }
   }
 }

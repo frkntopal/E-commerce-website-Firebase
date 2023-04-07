@@ -11,16 +11,16 @@ const Footer = () => {
       <p>Contact us for your questions, opinions and suggestions.</p>
     </div>
     <div class="footer-top-right">
-      <a href="https://www.linkedin.com/in/furkan-topal-0002bb200/" target='_blank'><i class="fab fa-linkedin"></i> </a>
-      <a href="https://twitter.com/_frkntopal" target='_blank'><i class="fab fa-twitter"></i></a>
-      <a href="https://github.com/frkntopal" target='_blank'><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/furkan-topal-0002bb200/" target='_blank' rel="noreferrer"><i class="fab fa-linkedin"></i> </a>
+      <a href="https://twitter.com/_frkntopal" target='_blank' rel="noreferrer"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/frkntopal" target='_blank' rel="noreferrer"><i class="fab fa-github"></i></a>
     </div>
   </div>
   <div className="footer-middle">
     <div className="footer-middle-left">
       <h4>About us</h4>
       <ul>
-        <li><a href="#">Our mission</a></li>
+        <li><Link to="/shop/our-mission" rel="noreferrer">Our mission</Link></li>
       </ul>
     </div>
     <div className="footer-middle-middle">
@@ -36,8 +36,8 @@ const Footer = () => {
     <div className="footer-middle-right">
       <h4>Support</h4>
       <ul>
-        <li><a href="#">Delivery and Return</a></li>
-        <li><a href="#">Privacy Policy</a></li>
+        <li><Link to="/shop/delivery-and-return" rel="noreferrer">Delivery and Return</Link></li>
+        <li><Link to="/shop/privacy-policy" rel="noreferrer">Privacy Policy</Link></li>
       </ul>
     </div>
   </div>
