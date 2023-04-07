@@ -41,6 +41,8 @@ function SignUpForm() {
 
             await createUserDocumentFromAuth(user, {displayName});
             resetFormFields();
+
+            window.location.href = '/'
         } catch (error) {
             if (error.code === 'auth/email-already-in-use') {
                 alert ('Cannot create user, email already in use')
