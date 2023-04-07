@@ -8,6 +8,8 @@ import App from "./App";
 import { UserProvider } from "./context/user.context";
 import { CategoriesProvider } from "./context/categories.context";
 import { CartProvider } from "./context/cart.context";
+import "@fortawesome/fontawesome-free/css/all.css";
+import "@fortawesome/fontawesome-free/js/all.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

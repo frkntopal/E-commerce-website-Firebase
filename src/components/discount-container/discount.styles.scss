@@ -1,0 +1,43 @@
+.discount-container {
+    width: 100%;
+    padding: 20px;
+    margin-top: 150px;
+  }
+  
+  .discount-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+  
+  .discount-item {
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+  
+  .discount-image {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+  
+  

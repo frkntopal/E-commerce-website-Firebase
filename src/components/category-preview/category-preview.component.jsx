@@ -17,6 +17,7 @@ const CategoryPreview = ({title, products}) =>{
                     )
                 }
             </div>
+            
         </div>
     )
 

@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import FormInput from '../form-input/form-input.component';
 import Button from '../button/button.component';
+import { Link} from 'react-router-dom';
 
 
 import {
@@ -11,6 +12,7 @@ import {
 } from '../../utils/firebase/firebase.utils';
 
 import './sign-in.styles.scss';
+import Footer from '../footer/footer.component';
 
 const defaultFormFields = {
   email: '',
@@ -28,6 +30,8 @@ const SignInForm = () => {
 
   const signInWithGoogle = async () => {
     await signInWithGooglePopup();
+      window.location.href = '/';
+
   };
 
   const handleSubmit = async (event) => {
@@ -40,6 +44,9 @@ const SignInForm = () => {
       );
            
       resetFormFields();
+
+      window.location.href = '/';
+      
     } catch (error) {
       switch (error.code) {
         case 'auth/wrong-password':
@@ -61,6 +68,7 @@ const SignInForm = () => {
   };
 
   return (
+    <div>
     <div className='sign-in-container'>
       <h2>Already have an account?</h2>
       <span>Sign in with your email and password</span>
@@ -83,16 +91,20 @@ const SignInForm = () => {
           value={password}
         />
           <div className="register">
-              <p>Don't have an account? <a href="#">Register</a></p>
+              <p>Don't have an account? <Link to="/auth/sign-up">Register</Link></p>
           </div>
 
         <div className='buttons-container'>
           <Button type='submit'>Sign In</Button>
           <Button type='button' buttonType='google' onClick={signInWithGoogle}>        
             Google sign in
-          </Button>
+          </Button>          
         </div>
-      </form>
+      </form>      
+    </div>
+    <div>
+        <Footer/>
+    </div>
     </div>
   );
 };

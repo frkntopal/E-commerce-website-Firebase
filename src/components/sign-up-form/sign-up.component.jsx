@@ -6,6 +6,7 @@ import { createAuthUserWithEmailAndPassword,createUserDocumentFromAuth } from ".
 import Button from "../button/button.component";
 import FormInput from "../form-input/form-input.component";
 import './sign-up.styles.scss'
+import Footer from "../footer/footer.component";
 
 const defaultFormFields = {
     displayname:'',
@@ -58,6 +59,7 @@ function SignUpForm() {
     }
 
     return (
+        <div>
         <div className="sign-up-container">
             <h1>Sign up with your email and password</h1>
             <form onSubmit={handleSubmit}>               
@@ -98,6 +100,10 @@ function SignUpForm() {
 
                 <Button type="submit"> Sign Up</Button>
             </form>
+        </div>
+            <div>
+            <Footer />
+            </div>
         </div>
     )
 }

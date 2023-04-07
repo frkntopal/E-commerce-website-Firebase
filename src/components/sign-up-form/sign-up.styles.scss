@@ -1,9 +1,20 @@
 .sign-up-container {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  height: auto;
+  
 
-    h2{
-        margin: 10px 0;
-    }
+  h2 {
+    margin: 10px 0;
+  }
+  
+  .buttons-container {
+      display: flex;
+      justify-content: space-between;
+
+  }
+
+
 }

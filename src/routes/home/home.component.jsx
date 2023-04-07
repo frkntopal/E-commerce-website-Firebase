@@ -2,6 +2,8 @@ import { Outlet } from "react-router-dom";
 
 import Directory from "../../components/directory/directory.component";
 import SliderContainer from "../../components/slider/slider.component";
+import Footer from "../../components/footer/footer.component";
+import DiscountContainer from "../../components/discount-container/discount.component";
 
 
 function Home() {
@@ -37,6 +39,8 @@ function Home() {
       <Outlet/>
       <Directory categories={categories} />
       <SliderContainer />
+      <DiscountContainer/>
+      <Footer/>
     </div>
     );
   }
