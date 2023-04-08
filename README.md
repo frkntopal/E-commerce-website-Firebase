@@ -2,9 +2,15 @@
 
 Hello, this project is my work that I integrated firebase into my first shopping site.
 
+
+
 # Name and description of the project
 
 I created the name of my project in the form of a cheaper shop. The content of my project is that I have created a design that people can shop properly using this shopping site.
+
+## You can view my site at this address ;
+
+- [E-commerce-website](https://grand-sawine-9104f6.netlify.app/)
 
 ## Technologies and libraries used.
 
