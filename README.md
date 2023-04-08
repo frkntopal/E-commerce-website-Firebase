@@ -10,7 +10,7 @@ I created the name of my project in the form of a Cheaper Shop. The content of m
 
 ## You can view my site at this address ;
 
-- [E-commerce-website](https://grand-sawine-9104f6.netlify.app/)
+- [E-commerce-website](https://cheapershop.netlify.app/)
 
 ## Technologies and libraries used.
 
